@@ -9,7 +9,7 @@ const Recipies = () => {
             .then(data => setRecipies(data))
     }, [])
     return (
-        <div className='grid gap-6 grid:cols-1 md:grid:cols-2 lg:grid-cols-3'>
+        <div className='grid gap-6 grid:cols-1 md:grid:cols-2 lg:grid-cols-3 p-15'>
             {recipies.map(recipie => <RecipieCard key={recipie._id} recipie={recipie}></RecipieCard>)}
 
         </div>

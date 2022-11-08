@@ -5,9 +5,11 @@ import logo from './../../../Assets/logo/logo.svg'
 const Header = () => {
     const menuItems = <>
         <li><Link to='/' className='font-semibold'>Home</Link></li>
+        <li><Link to='/login' className='font-semibold'>Login</Link></li>
+        <li><Link to='/signup' className='font-semibold'>SignUp</Link></li>
     </>
     return (
-        <div className="navbar pt-12 bg-base-100">
+        <div className="navbar pt-12 bg-base-100 py-15">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
