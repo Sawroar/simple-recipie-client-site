@@ -1,14 +1,14 @@
 import React from 'react';
-import cake from './../../Assets/h5-img-1.jpg'
-import about from './../../Assets/about.jpg'
 import Recipies from './Recipies/Recipies';
 import Introduction from './Introduction';
+import Tips from '../Tips';
 
 const Home = () => {
     return (
-        <div >
+        <div className='lg:px-20' >
             <Introduction></Introduction>
             <Recipies></Recipies>
+            <Tips></Tips>
 
         </div>
 
