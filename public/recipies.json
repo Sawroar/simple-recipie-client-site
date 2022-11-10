@@ -3,7 +3,7 @@
         "service_id": "04",
         "title": "Black bean,rice and vegetable burritos recipe",
         "img": "https://i.ibb.co/MZDH0yw/h5-img-3-1024x719.jpg",
-        "price": "20.00",
+        "time": "20.00 Minutes",
         "description": "These gluten-free dinner rolls are inspired by the ones from Jurassic, my favorite (but sadly, now closed) paleo-friendly restaurant in Portland, Oregon. When they closed, I had to recreate the rolls for my family to enjoy. A blend of almond flour and tapioca flour gives them a great balance of tenderness and chewiness. At the restaurant, the rolls were offered plain or with a whipped herbed goat cheese spread on top. For this recipe, I was inspired by the herby topping, so I incorporated garlic powder and Italian seasoning into the dough. Use fresh garlic and herbs if you’d like. You could also leave them out for a more basic roll. !",
         "facility": [
             {
@@ -28,8 +28,8 @@
         "service_id": "05",
         "title": "One pot creamy Mediterranean chicken pasta",
         "img": "https://i.ibb.co/wR7zR9j/h5-img-2.jpg",
-        "price": "20.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "time": "30.00 Minutes",
+        "description": "You’ll fall in love with this easy one-pot creamy Mediterranean pasta with chicken, lemons and olives. It’s a simple and satisfying weeknight meal that comes together in just 30 minutes!",
         "facility": [
             {
                 "name": "Instant Car Services",
@@ -53,8 +53,8 @@
         "service_id": "01",
         "title": "Brownies with raspberry sauce and chocolate ganache",
         "img": "https://i.ibb.co/nPkS85d/h5-img-4-1024x719.jpg",
-        "price": "200.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "time": "250.0 Minutes0",
+        "description": "These Brownies with Raspberry Sauce and Chocolate Ganache are amazing! They are super chocolaty, light and fluffy with a cake-like texture and topped with a fresh raspberry sauce and smooth, creamy chocolate ganache.",
         "facility": [
             {
                 "name": "Instant Car Services",
@@ -78,8 +78,8 @@
         "service_id": "02",
         "title": "Great pizza dough that makes calzones & stromboli",
         "img": "https://i.ibb.co/pbxvGK6/h5-img-5-1024x719.jpg",
-        "price": "150.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "time": "150.0 Minutes0",
+        "description": "This Easy Stromboli Recipe (AKA rolled up pizza) is made with No Wait, No Rise Stromboli dough so now you can satisfy your pizza cravings in 35 minutes!   Its rolled with layers of marinara sauce, mozzarella, pepperoni, sausage, ham, bell peppers and mushrooms for the ULTIMATE meat lovers stromboli but you can pick and choose any toppings you like for YOUR perfect stromboli recipe.  This stromboli is easy enough for a weekday meal, delicious enough to be the “must have” appetizer for Game Day or any gathering.",
         "facility": [
             {
                 "name": "Instant Car Services",
@@ -103,8 +103,8 @@
         "service_id": "03",
         "title": "The best black bean burgers I’ve ever had",
         "img": "https://i.ibb.co/yhy6GJK/h5-img-6-1024x719.jpg",
-        "price": "30.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "time": "30.00 Minutes",
+        "description": "Preheat oven to 325°F (163°C). Spread beans evenly onto a lined baking sheet and bake for 15 minutes until slightly dried out.To bake: Place patties on a parchment paper lined baking sheet and bake at 375°F (191°C) for 10 minutes on each side, 20 minutes total. To grill: Place patties on greased aluminum foil and grill 8 minutes on each side. Heat temperature is personal preference as all grills differ. Generally, black bean burgers should grill on medium-high heat about 350°F (177°C) – 400°F (204°C).",
         "facility": [
             {
                 "name": "Instant Car Services",
@@ -128,8 +128,8 @@
         "service_id": "06",
         "title": "Cookies with chocolate cubes without white sugar",
         "img": "https://i.ibb.co/7zb9jBL/h5-img-7-1024x719.jpg",
-        "price": "20.00",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "time": "20.00 Minutes",
+        "description": "See how to make chocolate chip cookies without brown sugar! The easy homemade cookies are studded with chocolate chips and have a rich, buttery aroma. Plus, you only need 6 ingredients and 15 minutes prep for this simple white sugar chocolate chip cookies recipe.",
         "facility": [
             {
                 "name": "Instant Car Services",
