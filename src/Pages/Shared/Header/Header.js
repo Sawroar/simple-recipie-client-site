@@ -10,7 +10,7 @@ const Header = () => {
         <li><Link to='/blog' className='font-semibold'>Blog</Link></li>
     </>
     return (
-        <div className="navbar pt-12 bg-base-100 py-15 lg:px-20">
+        <div className="navbar pt-12 bg-gray-100 py-15 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
