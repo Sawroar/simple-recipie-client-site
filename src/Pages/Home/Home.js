@@ -7,6 +7,7 @@ const Home = () => {
     return (
         <div className='lg:px-20' >
             <Introduction></Introduction>
+
             <Recipies></Recipies>
 
             <Tips></Tips>

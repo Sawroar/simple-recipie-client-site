@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Tips = () => {
     return (
         <div className='my-20'>
