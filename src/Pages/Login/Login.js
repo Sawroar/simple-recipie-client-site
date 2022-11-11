@@ -1,10 +1,12 @@
+import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
+import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthoContext } from '../../context/AuthProvider';
 
 const Login = () => {
 
-    const { login } = useContext(AuthoContext)
+    const { login, providerLogin } = useContext(AuthoContext)
     const location = useLocation()
     const navigate = useNavigate()
     const from = location.state?.from?.pathname || '/'
@@ -22,6 +24,15 @@ const Login = () => {
                 console.log(user)
                 navigate(from, { replace: true })
             }).catch(error => console.error(error))
+
+    }
+    const googleProvider = new GoogleAuthProvider()
+    const handleGoogleSignIn = () => {
+        providerLogin(googleProvider)
+            .then(result => {
+                const user = result.user
+                console.log(user)
+            }).catch(error => console.log(error))
     }
     return (
         <div className="hero w-full">
@@ -46,9 +57,11 @@ const Login = () => {
                         </div>
                         <div className="form-control mt-6">
                             <button type='submit' className="btn btn-primary font-bold">Login</button>
+                            <button onClick={handleGoogleSignIn} type='submit' className="btn btn-orange font-bold mt-2" > <FaGoogle className='mr-5'></FaGoogle> Sign in With Google</button>
                         </div>
                     </form>
-                    <p className='text-center pb-5'>Don't have an Account <Link className='text-blue-600 font-bold' to='/signup'>SignUp</Link></p>
+                    <p className='text-center pb-5'>Don't have an Account <Link className='text-blue-600 font-bold' to='/signup'> SignUp</Link></p>
+
                 </div>
             </div>
         </div>
