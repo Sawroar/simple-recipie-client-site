@@ -7,7 +7,7 @@ import cookings from './../../../Assets/coke.jpg'
 const Recipies = () => {
     const [recipies, setRecipies] = useState([])
     useEffect(() => {
-        fetch('recipies.json')
+        fetch('http://localhost:5000/recipies')
             .then(res => res.json())
             .then(data => setRecipies(data))
     }, [])

@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthoContext } from '../../../context/AuthProvider';
 import logo from './../../../Assets/logo/logo.svg'
 
 const Header = () => {
+    const { user } = useContext(AuthoContext)
     const menuItems = <>
         <li><Link to='/' className='font-semibold'>Home</Link></li>
-        <li><Link to='/login' className='font-semibold'>Login</Link></li>
+        {
+            user?.email ?
+                <>
+                    <li><Link to='/orders' className='font-semibold'>Reviews</Link></li>
+                </>
+                :
+                <li><Link to='/login' className='font-semibold'>Login</Link></li>
+        }
         <li><Link to='/signup' className='font-semibold'>SignUp</Link></li>
         <li><Link to='/blog' className='font-semibold'>Blog</Link></li>
     </>
     return (
-        <div className="navbar pt-12 bg-gray-100 py-15 lg:px-20">
+        <div className="navbar pt-12 bg-gray-100 py-15 lg:px-20 shadow-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -20,7 +29,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl"> <img height={'80px'} width={'80px'} src={logo} alt="" /></Link>
+                <Link to='/' className="btn btn-ghost normal-case text-xl"> <img height={'80px'} width={'60px'} src={logo} alt="" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

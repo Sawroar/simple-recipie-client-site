@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const RecipieCard = ({ recipie }) => {
-    const { img, time, description, price, title } = recipie
+    const { _id, img, time, description, price, title } = recipie
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl mb-4">
             <figure><img height={'100px'} width={'500px'} src={img} alt="Shoes" /></figure>
@@ -11,7 +12,11 @@ const RecipieCard = ({ recipie }) => {
                 <p className='text-2xl text-orange-600 font-semibold'>{time}</p>
                 <p className='text-xl text-gray-600 font-semibold'>{description.slice(0, 90)}...</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <Link to={`/recipie/${_id}`}
+                    >
+
+                        <button className="btn btn-primary">Buy Now</button>
+                    </Link>
                 </div>
             </div>
         </div>
