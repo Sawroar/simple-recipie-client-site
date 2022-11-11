@@ -49,15 +49,12 @@ const Recipie = () => {
                 <p className='text-2xl text-orange-600 font-semibold'>${price}</p>
                 <p className='text-2xl text-orange-600 font-semibold'>{time}</p>
                 <p className='text-xl text-gray-600 font-semibold'>{description}</p>
-                <div className="card-actions justify-end">
 
-
-                    <button className="btn btn-primary">Buy Now</button>
-
-                </div>
                 <div>
                     <form onSubmit={handlePlaceOrder}>
+                        <div>  <h1 className='text-center text-5xl mt-5'>Your Reviews here</h1></div>
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 lg:px-20 shadow-lg rounded-md my-4'>
+
                             <div>
                                 <h2 className='text-2xl text-gray-800'>Your First Name</h2>
                                 <input name='firstName' type="text" placeholder="Your Name" className="input input-ghost w-full input-bordered" />
@@ -75,10 +72,10 @@ const Recipie = () => {
                                 <input name='email' type="text" defaultValue={user?.email} readOnly placeholder="YourEmail" className="input input-ghost w-full my-15 input-bordered" />
 
                             </div>
-                            <textarea name='message' className="textarea textarea-bordered h-24 my-15 w-full" placeholder="Your Message"></textarea>
+                            <textarea name='message' className="textarea textarea-bordered h-24 my-35 w-full" placeholder="Your Message"></textarea>
                             <div>
 
-                                <input type="submit" className="btn btn-primary " value="Place Your Order" />
+                                <input type="submit" className="btn btn-orange " value="Place Your Review" />
                             </div>
                         </div>
 

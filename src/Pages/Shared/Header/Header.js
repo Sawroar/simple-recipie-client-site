@@ -4,13 +4,20 @@ import { AuthoContext } from '../../../context/AuthProvider';
 import logo from './../../../Assets/logo/logo.svg'
 
 const Header = () => {
-    const { user } = useContext(AuthoContext)
+    const { user, logOut } = useContext(AuthoContext)
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     const menuItems = <>
         <li><Link to='/' className='font-semibold'>Home</Link></li>
         {
             user?.email ?
                 <>
                     <li><Link to='/orders' className='font-semibold'>Reviews</Link></li>
+                    <li><Link to='/logout' onClick={handleLogOut} className='font-semibold'>LogOut</Link></li>
                 </>
                 :
                 <li><Link to='/login' className='font-semibold'>Login</Link></li>
@@ -19,7 +26,7 @@ const Header = () => {
         <li><Link to='/blog' className='font-semibold'>Blog</Link></li>
     </>
     return (
-        <div className="navbar pt-12 bg-gray-100 py-15 lg:px-20 shadow-xl">
+        <div className="navbar pt-12 bg-gray-300 rounded-lg py-15 lg:px-20 shadow-xl">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

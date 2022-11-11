@@ -7,11 +7,13 @@ import Login from "../../Pages/Login/Login";
 import Orders from "../../Pages/Orders";
 import Error from "../../Pages/Shared/Error";
 import SignUp from "../../Pages/SignUp/SignUp";
+import PrivateRoute from "../PrivateRoute";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
@@ -30,17 +32,14 @@ const router = createBrowserRouter([
                 element: <Blog></Blog>
             }, {
                 path: '/recipie/:id',
-                element: <Recipie></Recipie>,
+                element: <PrivateRoute><Recipie></Recipie></PrivateRoute>,
                 loader: ({ params }) => fetch(`http://localhost:5000/recipies/${params.id}`)
             }, {
                 path: '/orders',
                 element: <Orders></Orders>
             }
         ]
-    }, {
-        path: '/*',
-        errorElement: <Error></Error>
-    }
+    },
 ])
 
 export default router;
